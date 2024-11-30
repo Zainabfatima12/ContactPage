@@ -1,0 +1,18 @@
+// Handling the contact form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Your message has been sent!');
+});
+
+// Handling the search icon click to show/hide the search box
+const searchIcon = document.querySelector('.fa-magnifying-glass'); // Search icon
+const searchBox = document.querySelector('.search-box'); // The search box
+
+searchIcon.addEventListener('click', function() {
+    // Toggle visibility of the search box
+    searchBox.classList.toggle('active');
+});
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
